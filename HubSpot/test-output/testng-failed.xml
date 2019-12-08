@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.ContactsPageTest">
         <methods>
-          <include name="createContactsTest"/>
+          <include name="createContactsTest" invocation-numbers="0 1 2 3"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

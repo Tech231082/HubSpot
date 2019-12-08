@@ -17,6 +17,7 @@ public class ContactsPageTest extends BasePage{
 	public LoginPage loginPage;
 	public HomePage homePage;
 	public ContactsPage contactsPage;
+	//public String sheetName="hubspot";
 	public String sheetName="hubspot";
 	
 	public ContactsPageTest() {
@@ -33,7 +34,7 @@ public class ContactsPageTest extends BasePage{
 		homePage.validatClickOnContactsLink();
 	}
 	
-	@Test(priority=1,enabled=false)
+	@Test(priority=1)
 	public void validateContactLabelPresentTest() {
 		
 		Assert.assertTrue(contactsPage.validateContactLabelPresent(),"Contacts Label is not present on Page");
