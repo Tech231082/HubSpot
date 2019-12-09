@@ -26,7 +26,7 @@ public class ExtentReportListenerClass implements IReporter {
 	@Override
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
-				+ "ExtentReportHubSpot.html", true);
+				+ "Extent.html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
