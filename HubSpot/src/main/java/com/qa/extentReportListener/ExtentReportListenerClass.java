@@ -23,7 +23,6 @@ import com.relevantcodes.extentreports.model.Test;
 public class ExtentReportListenerClass implements IReporter {
 	private ExtentReports extent;
 
-	@Override
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
 				+ "Extent.html", true);

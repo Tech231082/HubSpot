@@ -23,7 +23,7 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="//i18n-string[contains(text(),'Forgot my password')]")
 	WebElement forgotPassword;
 	
-	@FindBy(xpath="//i18n-string[contains(text(),'Sign up')]")
+	@FindBy(xpath="//i18n-string[@data-key='login.signupLink.cta']")
 	WebElement signUpButton;
 	
 	@FindBy(xpath="//i18n-string[contains(text(),'Privacy Policy')]")
