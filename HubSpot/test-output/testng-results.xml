@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20556" started-at="2019-12-10T08:08:11 MST" finished-at="2019-12-10T08:08:31 MST">
+  <suite name="Default suite" duration-ms="17133" started-at="2019-12-10T10:15:18 MST" finished-at="2019-12-10T10:15:36 MST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20556" started-at="2019-12-10T08:08:11 MST" finished-at="2019-12-10T08:08:31 MST">
-      <class name="com.qa.testcases.SignUpPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SignUpPageTest@51cdd8a]" name="setUp" is-config="true" duration-ms="11637" started-at="2019-12-10T08:08:11 MST" finished-at="2019-12-10T08:08:22 MST">
+    <test name="Default test" duration-ms="17133" started-at="2019-12-10T10:15:18 MST" finished-at="2019-12-10T10:15:36 MST">
+      <class name="com.qa.testcases.ForgotPasswordPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="setUp" is-config="true" duration-ms="16841" started-at="2019-12-10T10:15:19 MST" finished-at="2019-12-10T10:15:35 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSignUpTest()[pri:0, instance:com.qa.testcases.SignUpPageTest@51cdd8a]" name="validateSignUpTest" duration-ms="8869" started-at="2019-12-10T08:08:22 MST" finished-at="2019-12-10T08:08:31 MST">
+        <test-method status="PASS" signature="goBackToLoginPageTest()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="goBackToLoginPageTest" duration-ms="252" started-at="2019-12-10T10:15:35 MST" finished-at="2019-12-10T10:15:36 MST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSignUpTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SignUpPageTest@51cdd8a]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-10T08:08:31 MST" finished-at="2019-12-10T08:08:31 MST">
+        </test-method> <!-- goBackToLoginPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-10T10:15:36 MST" finished-at="2019-12-10T10:15:36 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.SignUpPageTest -->
+      </class> <!-- com.qa.testcases.ForgotPasswordPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
