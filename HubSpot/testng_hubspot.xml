@@ -3,12 +3,15 @@
 <suite name="HubSpot Suite">
 <listeners>
 <listener class-name="com.qa.extentReportListener.ExtentReportListenerClass"/>
+
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.qa.testcases.ContactsPageTest"/>
       <class name="com.qa.testcases.HomePageTest"/>
       <class name="com.qa.testcases.LoginPageTest"/>
+      <class name="com.qa.testcases.ForgotPasswordPageTest"/>
+      <class name="com.qa.testcases.SignUpPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

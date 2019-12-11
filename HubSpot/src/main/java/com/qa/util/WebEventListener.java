@@ -5,10 +5,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 
-import com.qa.base.BasePage;
-
-public class WebEventListener extends BasePage implements WebDriverEventListener{
+public class WebEventListener implements WebDriverEventListener {
 
 	public void beforeAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
@@ -20,79 +20,73 @@ public class WebEventListener extends BasePage implements WebDriverEventListener
 		
 	}
 
-	
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	
 	public void beforeAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	
 	public void beforeNavigateTo(String url, WebDriver driver) {
-		System.out.println("Before Navigating to "+url);
+		System.out.println("Before Navigation to  "+driver.getCurrentUrl());
 		
 	}
 
-	
 	public void afterNavigateTo(String url, WebDriver driver) {
-		System.out.println("After Navigating to "+url);
+		System.out.println("Navigated to  "+driver.getCurrentUrl());
 		
 	}
 
 	public void beforeNavigateBack(WebDriver driver) {
-		System.out.println("Before Navigating back to");
+		System.out.println("before Navigating Back "+driver.getCurrentUrl());
 		
 	}
 
 	public void afterNavigateBack(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("After Navigating Back "+driver.getCurrentUrl());
 		
 	}
 
 	public void beforeNavigateForward(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("before Navigating forward "+driver.getCurrentUrl());
 		
 	}
 
 	public void afterNavigateForward(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("after Navigating forward "+driver.getCurrentUrl());
 		
 	}
 
 	public void beforeNavigateRefresh(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("before Navigating refresh "+driver.getCurrentUrl());
 		
 	}
 
-	
 	public void afterNavigateRefresh(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("After Navigating refresh "+driver.getCurrentUrl());
 		
 	}
 
-	
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("before findby element ");
 		
 	}
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("After finding element ");
 		
 	}
 
 	public void beforeClickOn(WebElement element, WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("before clicking on  element "+element.getText());
 		
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		System.out.println("clicked on  "+element);
+		System.out.println("After clicking on  element "+element.getText());
 		
 	}
 
@@ -127,7 +121,7 @@ public class WebEventListener extends BasePage implements WebDriverEventListener
 	}
 
 	public void onException(Throwable throwable, WebDriver driver) {
-		System.out.println("Exception occured "+throwable);
+		System.out.println("Exception occured "+throwable.getMessage());
 		
 	}
 
@@ -150,5 +144,14 @@ public class WebEventListener extends BasePage implements WebDriverEventListener
 		// TODO Auto-generated method stub
 		
 	}
+	public void onTestFailure(ITestResult result) {
+		System.out.println("Exception occured ...."+result.getTestName()+"test failed");
+		String methodName=result.getMethod().toString().trim();
+		ITestContext context=result.getTestContext();
+		WebDriver driver=(WebDriver)context.getAttribute("driver");
+		TestUtil.getScreenShot(methodName,driver);
+		
+	}
+	
 
 }

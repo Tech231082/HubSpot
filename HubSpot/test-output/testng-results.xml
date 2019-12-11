@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17133" started-at="2019-12-10T10:15:18 MST" finished-at="2019-12-10T10:15:36 MST">
+  <suite name="Default suite" duration-ms="17786" started-at="2019-12-11T13:50:55 MST" finished-at="2019-12-11T13:51:13 MST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17133" started-at="2019-12-10T10:15:18 MST" finished-at="2019-12-10T10:15:36 MST">
-      <class name="com.qa.testcases.ForgotPasswordPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="setUp" is-config="true" duration-ms="16841" started-at="2019-12-10T10:15:19 MST" finished-at="2019-12-10T10:15:35 MST">
+    <test name="Default test" duration-ms="17786" started-at="2019-12-11T13:50:55 MST" finished-at="2019-12-11T13:51:13 MST">
+      <class name="com.qa.testcases.PrivacyPolicyPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.qa.testcases.PrivacyPolicyPageTest@5a1c0542]" name="SetUp" is-config="true" duration-ms="16972" started-at="2019-12-11T13:50:55 MST" finished-at="2019-12-11T13:51:12 MST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="goBackToLoginPageTest()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="goBackToLoginPageTest" duration-ms="252" started-at="2019-12-10T10:15:35 MST" finished-at="2019-12-10T10:15:36 MST">
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="validateHubSpotPrivacyPolicyTitleTest()[pri:0, instance:com.qa.testcases.PrivacyPolicyPageTest@5a1c0542]" name="validateHubSpotPrivacyPolicyTitleTest" duration-ms="15" started-at="2019-12-11T13:51:12 MST" finished-at="2019-12-11T13:51:12 MST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goBackToLoginPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.ForgotPasswordPageTest@51cdd8a]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-10T10:15:36 MST" finished-at="2019-12-10T10:15:36 MST">
+        </test-method> <!-- validateHubSpotPrivacyPolicyTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.PrivacyPolicyPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="753" started-at="2019-12-11T13:51:12 MST" finished-at="2019-12-11T13:51:13 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.ForgotPasswordPageTest -->
+      </class> <!-- com.qa.testcases.PrivacyPolicyPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

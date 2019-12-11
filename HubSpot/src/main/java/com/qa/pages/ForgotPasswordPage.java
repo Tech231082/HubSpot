@@ -1,8 +1,12 @@
 package com.qa.pages;
 
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.base.BasePage;
 
@@ -12,10 +16,10 @@ public class ForgotPasswordPage extends BasePage{
 	@FindBy(xpath="//input[@id='email']")
 	WebElement email;
 	
-	@FindBy(xpath="//i18n-string[@data-key='login.requestReset.header']")
+	@FindBy(xpath="//button[@id='reset-button']//i18n-string[contains(text(),'Reset your password')]")
 	WebElement resetYourPasswordButton;
 	
-	@FindBy(xpath="//span[contains(text(),'Go back to ')]")
+	@FindBy(xpath="//a[contains(text(),'hubspot.com/login')]")
 	WebElement goBackToLoginButton;
 	
 	//class constructor
@@ -27,6 +31,8 @@ public class ForgotPasswordPage extends BasePage{
 	//page methods
 	
 	public void resetPassword() {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf(email)));
 		email.sendKeys("anything.something@gmail.com");
 		
 	}
