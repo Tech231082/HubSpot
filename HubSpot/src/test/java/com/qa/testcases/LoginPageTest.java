@@ -9,7 +9,8 @@ import org.testng.annotations.Test;
 import com.qa.base.BasePage;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
-@Listeners(com.qa.util.TestListenerClass.class)
+import com.qa.util.Constants;
+
 public class LoginPageTest extends BasePage{
 	
 	public LoginPage loginPage;
@@ -25,12 +26,12 @@ public class LoginPageTest extends BasePage{
 		loginPage=new LoginPage();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled=false)
 	public void LoginPageTitleTest() {
 		String title=loginPage.validateLoginPageTitle();
 		System.out.println(title);
 		
-		Assert.assertEquals(title, "HubSpot Login");
+		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE);
 	}
 	
 	
@@ -40,7 +41,7 @@ public class LoginPageTest extends BasePage{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		String actual=driver.getTitle();
 		System.out.println(actual);
-		//Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, Constants.HOME_PAGE_TITLE);
 	}
 	
 	@AfterMethod

@@ -41,12 +41,12 @@ public class WebEventListener implements WebDriverEventListener {
 	}
 
 	public void beforeNavigateBack(WebDriver driver) {
-		System.out.println("before Navigating Back "+driver.getCurrentUrl());
+		System.out.println("before Navigating Back to : "+driver.getCurrentUrl());
 		
 	}
 
 	public void afterNavigateBack(WebDriver driver) {
-		System.out.println("After Navigating Back "+driver.getCurrentUrl());
+		System.out.println("After Navigating Back to : "+driver.getCurrentUrl());
 		
 	}
 
@@ -71,22 +71,22 @@ public class WebEventListener implements WebDriverEventListener {
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-		System.out.println("before findby element ");
+		System.out.println("Finding the element "+element);
 		
 	}
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
-		System.out.println("After finding element ");
+		System.out.println("After finding element "+element);
 		
 	}
 
 	public void beforeClickOn(WebElement element, WebDriver driver) {
-		System.out.println("before clicking on  element "+element.getText());
+		System.out.println("Before clicking on  element..... "+element.getTagName());
 		
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		System.out.println("After clicking on  element "+element.getText());
+		System.out.println("Element has been clicked .... "+element);
 		
 	}
 
@@ -122,7 +122,15 @@ public class WebEventListener implements WebDriverEventListener {
 
 	public void onException(Throwable throwable, WebDriver driver) {
 		System.out.println("Exception occured "+throwable.getMessage());
-		
+		TestUtil.getScreenShot();
+		//TestUtil.getScreenShot(methodName, driver);
+		/*try {
+			TestUtil.getScreenShot(methodName, driver);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}*/
 	}
 
 	public <X> void beforeGetScreenshotAs(OutputType<X> target) {
@@ -145,11 +153,11 @@ public class WebEventListener implements WebDriverEventListener {
 		
 	}
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Exception occured ...."+result.getTestName()+"test failed");
+		System.out.println(result.getTestName()+"test failed");
 		String methodName=result.getMethod().toString().trim();
 		ITestContext context=result.getTestContext();
 		WebDriver driver=(WebDriver)context.getAttribute("driver");
-		TestUtil.getScreenShot(methodName,driver);
+		//TestUtil.getScreenShot();
 		
 	}
 	
