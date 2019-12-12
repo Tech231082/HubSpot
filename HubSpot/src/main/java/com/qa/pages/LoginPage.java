@@ -11,7 +11,7 @@ import com.qa.base.BasePage;
 public class LoginPage extends BasePage{
 	
 	//Obeject repo /page factory
-	@FindBy(xpath="//input[@id='username1']")
+	@FindBy(xpath="//input[@id='username']")
 	WebElement username;
 	
 	@FindBy(id="password")

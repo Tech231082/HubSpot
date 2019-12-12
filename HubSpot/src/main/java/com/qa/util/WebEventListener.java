@@ -86,7 +86,7 @@ public class WebEventListener implements WebDriverEventListener {
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		System.out.println("Element has been clicked .... "+element);
+		System.out.println("Element clicked .... "+element.toString());
 		
 	}
 

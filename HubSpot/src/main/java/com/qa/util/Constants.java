@@ -10,5 +10,7 @@ public class Constants {
 	public final static String CONTACTS_SHEET_NAME = "contacts";
 	
 	public final static String PRIVACY_POLICY_PAGE_TITLE="HubSpot Privacy Policy";
+	
+	public final static String INBOX_PAGE_TITLE="Inbox";
 
 }

@@ -30,7 +30,7 @@ public class PrivacyPolicyPageTest extends BasePage{
 		loginPage.clickOnPrivacyPolicyLink();
 	}
 	
-	@Test(enabled=false)
+	@Test()
 	public void validateHubSpotPrivacyPolicyLabelTest() {
 		privacyPolicyPage.validateHubSpotPrivacyPolicyLabel();
 	}
@@ -40,7 +40,7 @@ public class PrivacyPolicyPageTest extends BasePage{
 		//WebDriverWait wait=new WebDriverWait(driver,10);
 		//wait.until(ExpectedConditions.titleIs(Constants.PRIVACY_POLICY_PAGE_TITLE));
 		System.out.println(privacyPolicyPage.getHubSpotPrivacyPolicyPageTitle());
-		//Assert.assertEquals(privacyPolicyPage.getHubSpotPrivacyPolicyPageTitle(), Constants.PRIVACY_POLICY_PAGE_TITLE);
+		Assert.assertEquals(privacyPolicyPage.getHubSpotPrivacyPolicyPageTitle(), Constants.PRIVACY_POLICY_PAGE_TITLE);
 	}
 	
 	@AfterMethod

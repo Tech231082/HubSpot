@@ -31,8 +31,7 @@ public class ForgotPasswordPage extends BasePage{
 	//page methods
 	
 	public void resetPassword() {
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf(email)));
+		
 		email.sendKeys("anything.something@gmail.com");
 		
 	}
