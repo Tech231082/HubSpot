@@ -1,0 +1,22 @@
+2020-02-03 17:56:03,609 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-02-03 17:58:17,202 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-02-03 17:58:37,895 [Worker-9: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AutomationChallengeGrow:AutomationChallengeGrow:0.0.1-SNAPSHOT @ C:\Users\parmod.kumar\git\AutomationChallengeGrow\pom.xml.
+2020-02-03 17:58:39,357 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 17:58:39,357 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\main\resources
+2020-02-03 17:58:39,359 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 17:58:39,359 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\test\resources
+2020-02-03 17:58:41,063 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 17:58:41,064 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\main\resources
+2020-02-03 17:58:41,065 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 17:58:41,066 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\test\resources
+2020-02-03 18:01:14,439 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-02-03 18:01:15,303 [Worker-2: Decoration Calculation] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-02-03 18:01:50,336 [Worker-11: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AutomationChallengeGrow:AutomationChallengeGrow:0.0.1-SNAPSHOT @ C:\Users\parmod.kumar\git\AutomationChallengeGrow\pom.xml.
+2020-02-03 18:01:50,740 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 18:01:50,741 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\main\resources
+2020-02-03 18:01:50,743 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 18:01:50,743 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\test\resources
+2020-02-03 18:01:52,568 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 18:01:52,568 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\main\resources
+2020-02-03 18:01:52,570 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-03 18:01:52,570 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\parmod.kumar\git\AutomationChallengeGrow\src\test\resources
